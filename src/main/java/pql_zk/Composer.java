@@ -272,7 +272,7 @@ public class Composer extends GenericForwardComposer {
 //        ArrayList<String> Results = new ArrayList<String>();
 
         var29 = queryResult.getTaskMap().entrySet().iterator();
-        Entry map = null;
+        Entry<String,org.pql.core.PQLTask> map = null;
         if(var29.hasNext()) {
             while(var29.hasNext()) {
                 map = (Entry)var29.next();
@@ -287,10 +287,11 @@ public class Composer extends GenericForwardComposer {
                 Listcell listCell1 = new Listcell();
                 Listcell listCell2 = new Listcell();
                 Listcell listCell3 = new Listcell();
-
-                temp1.setValue(map.getValue().toString().substring(0,3));
-                temp2.setValue(map.getValue().toString().substring(4,12));
-                temp3.setValue(map.getValue().toString().substring(14,(map.getValue().toString()).length()));
+      //          org.pql.core.PQLTask pqlTask = (org.pql.core.PQLTask) map.getValue();
+//                System.out.println("Type is: " + map.getValue().getLabel());
+                temp1.setValue(map.getValue().getLabel());
+                temp2.setValue(Double.toString(map.getValue().getSimilarity()));
+                temp3.setValue(String.join(",", map.getValue().getSimilarLabels()));
 
                 listCell1.appendChild(temp1);
                 listCell2.appendChild(temp2);
