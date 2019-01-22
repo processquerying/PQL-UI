@@ -21,8 +21,10 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.*;
 import java.util.*;
-import org.pql.ini.*;
-import org.pql.api.*;
+import org.pql.api.PQLAPI;
+import org.pql.core.PQLTask;
+import org.pql.ini.PQLIniFile;
+import org.pql.query.PQLQueryResult;
 import org.zkoss.zul.Label;
 import org.zkoss.zul.Window;
 
@@ -90,10 +92,11 @@ public class Composer extends GenericForwardComposer {
             // Parse input query using antlr parser
             parser.query();
 
+            PQLQueryResult myQueryResult = null;
             // Assign result of the query into queryResult
             queryResult = pqlAPI.query(textValue);
-            // Show notification to user
-            Clients.showNotification("Query Successful!", "info", null, null, 1000);
+            myQueryResult = pqlAPI.query("SELECT * FROM *;");
+
 //            System.out.println(queryResult.getSearchResults());
             // Set the result label value to show in frontend
             // resultLabel ID is set in .zul
@@ -105,6 +108,7 @@ public class Composer extends GenericForwardComposer {
  //           taskLabel.setValue(getTasks());
             // Result listbox
             List<String> resultData = new ArrayList<String>(queryResult.getSearchResults());
+            System.out.println("[Search Result]: " + myQueryResult.getSearchResults() + "[Error]: " + myQueryResult.getNumberOfParseErrors());
             modelList = new ListModelList(resultData, true);
             resultListbox.setModel(modelList);
             // Attribute Listbox
@@ -123,6 +127,8 @@ public class Composer extends GenericForwardComposer {
             locListbox.setModel(modellocList);
 
             readTasks();
+            // Show notification to user
+            Clients.showNotification("Query Successful!", "info", null, null, 1000);
 
         } catch (Exception e) {
             //Get error message and show it to user as error notification when bad things happen
@@ -132,8 +138,8 @@ public class Composer extends GenericForwardComposer {
           //  resultLabel.setValue(null);
 //            attributeLabel.setValue(null);
 //            locationLabel.setValue(null);
-            variableLabel.setValue(null);
-            taskLabel.setValue(null);
+//            variableLabel.setValue(null);
+//            taskLabel.setValue(null);
         }
 
     }
