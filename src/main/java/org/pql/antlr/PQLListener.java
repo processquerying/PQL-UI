@@ -1,5 +1,6 @@
-// Generated from PQL.g4 by ANTLR 4.7.1
+// Generated from PQL.g4 by ANTLR 4.1
 package org.pql.antlr;
+import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -8,633 +9,706 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface PQLListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link PQLParser#query}.
-	 * @param ctx the parse tree
-	 */
-	void enterQuery(PQLParser.QueryContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#query}.
-	 * @param ctx the parse tree
-	 */
-	void exitQuery(PQLParser.QueryContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#selectQuery}.
-	 * @param ctx the parse tree
-	 */
-	void enterSelectQuery(PQLParser.SelectQueryContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#selectQuery}.
-	 * @param ctx the parse tree
-	 */
-	void exitSelectQuery(PQLParser.SelectQueryContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#insertQuery}.
-	 * @param ctx the parse tree
-	 */
-	void enterInsertQuery(PQLParser.InsertQueryContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#insertQuery}.
-	 * @param ctx the parse tree
-	 */
-	void exitInsertQuery(PQLParser.InsertQueryContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#variables}.
-	 * @param ctx the parse tree
-	 */
-	void enterVariables(PQLParser.VariablesContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#variables}.
-	 * @param ctx the parse tree
-	 */
-	void exitVariables(PQLParser.VariablesContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#variable}.
-	 * @param ctx the parse tree
-	 */
-	void enterVariable(PQLParser.VariableContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#variable}.
-	 * @param ctx the parse tree
-	 */
-	void exitVariable(PQLParser.VariableContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#varName}.
-	 * @param ctx the parse tree
-	 */
-	void enterVarName(PQLParser.VarNameContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#varName}.
-	 * @param ctx the parse tree
-	 */
-	void exitVarName(PQLParser.VarNameContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#attributes}.
-	 * @param ctx the parse tree
-	 */
-	void enterAttributes(PQLParser.AttributesContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#attributes}.
-	 * @param ctx the parse tree
-	 */
-	void exitAttributes(PQLParser.AttributesContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#attribute}.
-	 * @param ctx the parse tree
-	 */
-	void enterAttribute(PQLParser.AttributeContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#attribute}.
-	 * @param ctx the parse tree
-	 */
-	void exitAttribute(PQLParser.AttributeContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#locations}.
-	 * @param ctx the parse tree
-	 */
-	void enterLocations(PQLParser.LocationsContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#locations}.
-	 * @param ctx the parse tree
-	 */
-	void exitLocations(PQLParser.LocationsContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#location}.
-	 * @param ctx the parse tree
-	 */
-	void enterLocation(PQLParser.LocationContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#location}.
-	 * @param ctx the parse tree
-	 */
-	void exitLocation(PQLParser.LocationContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#universe}.
-	 * @param ctx the parse tree
-	 */
-	void enterUniverse(PQLParser.UniverseContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#universe}.
-	 * @param ctx the parse tree
-	 */
-	void exitUniverse(PQLParser.UniverseContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#attributeName}.
-	 * @param ctx the parse tree
-	 */
-	void enterAttributeName(PQLParser.AttributeNameContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#attributeName}.
-	 * @param ctx the parse tree
-	 */
-	void exitAttributeName(PQLParser.AttributeNameContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#locationPath}.
-	 * @param ctx the parse tree
-	 */
-	void enterLocationPath(PQLParser.LocationPathContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#locationPath}.
-	 * @param ctx the parse tree
-	 */
-	void exitLocationPath(PQLParser.LocationPathContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#setOfTasks}.
-	 * @param ctx the parse tree
-	 */
-	void enterSetOfTasks(PQLParser.SetOfTasksContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#setOfTasks}.
-	 * @param ctx the parse tree
-	 */
-	void exitSetOfTasks(PQLParser.SetOfTasksContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#tasks}.
-	 * @param ctx the parse tree
-	 */
-	void enterTasks(PQLParser.TasksContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#tasks}.
-	 * @param ctx the parse tree
-	 */
-	void exitTasks(PQLParser.TasksContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link PQLParser#setOfAllTasks}.
 	 * @param ctx the parse tree
 	 */
-	void enterSetOfAllTasks(PQLParser.SetOfAllTasksContext ctx);
+	void enterSetOfAllTasks(@NotNull PQLParser.SetOfAllTasksContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link PQLParser#setOfAllTasks}.
 	 * @param ctx the parse tree
 	 */
-	void exitSetOfAllTasks(PQLParser.SetOfAllTasksContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#setOfTasksLiteral}.
-	 * @param ctx the parse tree
-	 */
-	void enterSetOfTasksLiteral(PQLParser.SetOfTasksLiteralContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#setOfTasksLiteral}.
-	 * @param ctx the parse tree
-	 */
-	void exitSetOfTasksLiteral(PQLParser.SetOfTasksLiteralContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#trace}.
-	 * @param ctx the parse tree
-	 */
-	void enterTrace(PQLParser.TraceContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#trace}.
-	 * @param ctx the parse tree
-	 */
-	void exitTrace(PQLParser.TraceContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#event}.
-	 * @param ctx the parse tree
-	 */
-	void enterEvent(PQLParser.EventContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#event}.
-	 * @param ctx the parse tree
-	 */
-	void exitEvent(PQLParser.EventContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#task}.
-	 * @param ctx the parse tree
-	 */
-	void enterTask(PQLParser.TaskContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#task}.
-	 * @param ctx the parse tree
-	 */
-	void exitTask(PQLParser.TaskContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#approximate}.
-	 * @param ctx the parse tree
-	 */
-	void enterApproximate(PQLParser.ApproximateContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#approximate}.
-	 * @param ctx the parse tree
-	 */
-	void exitApproximate(PQLParser.ApproximateContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#label}.
-	 * @param ctx the parse tree
-	 */
-	void enterLabel(PQLParser.LabelContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#label}.
-	 * @param ctx the parse tree
-	 */
-	void exitLabel(PQLParser.LabelContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#similarity}.
-	 * @param ctx the parse tree
-	 */
-	void enterSimilarity(PQLParser.SimilarityContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#similarity}.
-	 * @param ctx the parse tree
-	 */
-	void exitSimilarity(PQLParser.SimilarityContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#setOfTasksConstruction}.
-	 * @param ctx the parse tree
-	 */
-	void enterSetOfTasksConstruction(PQLParser.SetOfTasksConstructionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#setOfTasksConstruction}.
-	 * @param ctx the parse tree
-	 */
-	void exitSetOfTasksConstruction(PQLParser.SetOfTasksConstructionContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#unaryPredicateConstruction}.
-	 * @param ctx the parse tree
-	 */
-	void enterUnaryPredicateConstruction(PQLParser.UnaryPredicateConstructionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#unaryPredicateConstruction}.
-	 * @param ctx the parse tree
-	 */
-	void exitUnaryPredicateConstruction(PQLParser.UnaryPredicateConstructionContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#binaryPredicateConstruction}.
-	 * @param ctx the parse tree
-	 */
-	void enterBinaryPredicateConstruction(PQLParser.BinaryPredicateConstructionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#binaryPredicateConstruction}.
-	 * @param ctx the parse tree
-	 */
-	void exitBinaryPredicateConstruction(PQLParser.BinaryPredicateConstructionContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#anyAll}.
-	 * @param ctx the parse tree
-	 */
-	void enterAnyAll(PQLParser.AnyAllContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#anyAll}.
-	 * @param ctx the parse tree
-	 */
-	void exitAnyAll(PQLParser.AnyAllContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#unaryPredicateName}.
-	 * @param ctx the parse tree
-	 */
-	void enterUnaryPredicateName(PQLParser.UnaryPredicateNameContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#unaryPredicateName}.
-	 * @param ctx the parse tree
-	 */
-	void exitUnaryPredicateName(PQLParser.UnaryPredicateNameContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#unaryTracePredicateName}.
-	 * @param ctx the parse tree
-	 */
-	void enterUnaryTracePredicateName(PQLParser.UnaryTracePredicateNameContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#unaryTracePredicateName}.
-	 * @param ctx the parse tree
-	 */
-	void exitUnaryTracePredicateName(PQLParser.UnaryTracePredicateNameContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#binaryPredicateName}.
-	 * @param ctx the parse tree
-	 */
-	void enterBinaryPredicateName(PQLParser.BinaryPredicateNameContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#binaryPredicateName}.
-	 * @param ctx the parse tree
-	 */
-	void exitBinaryPredicateName(PQLParser.BinaryPredicateNameContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#predicate}.
-	 * @param ctx the parse tree
-	 */
-	void enterPredicate(PQLParser.PredicateContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#predicate}.
-	 * @param ctx the parse tree
-	 */
-	void exitPredicate(PQLParser.PredicateContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#proposition}.
-	 * @param ctx the parse tree
-	 */
-	void enterProposition(PQLParser.PropositionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#proposition}.
-	 * @param ctx the parse tree
-	 */
-	void exitProposition(PQLParser.PropositionContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#unaryPredicate}.
-	 * @param ctx the parse tree
-	 */
-	void enterUnaryPredicate(PQLParser.UnaryPredicateContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#unaryPredicate}.
-	 * @param ctx the parse tree
-	 */
-	void exitUnaryPredicate(PQLParser.UnaryPredicateContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#binaryPredicate}.
-	 * @param ctx the parse tree
-	 */
-	void enterBinaryPredicate(PQLParser.BinaryPredicateContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#binaryPredicate}.
-	 * @param ctx the parse tree
-	 */
-	void exitBinaryPredicate(PQLParser.BinaryPredicateContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#unaryTracePredicate}.
-	 * @param ctx the parse tree
-	 */
-	void enterUnaryTracePredicate(PQLParser.UnaryTracePredicateContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#unaryTracePredicate}.
-	 * @param ctx the parse tree
-	 */
-	void exitUnaryTracePredicate(PQLParser.UnaryTracePredicateContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#unaryPredicateMacro}.
-	 * @param ctx the parse tree
-	 */
-	void enterUnaryPredicateMacro(PQLParser.UnaryPredicateMacroContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#unaryPredicateMacro}.
-	 * @param ctx the parse tree
-	 */
-	void exitUnaryPredicateMacro(PQLParser.UnaryPredicateMacroContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#binaryPredicateMacro}.
-	 * @param ctx the parse tree
-	 */
-	void enterBinaryPredicateMacro(PQLParser.BinaryPredicateMacroContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#binaryPredicateMacro}.
-	 * @param ctx the parse tree
-	 */
-	void exitBinaryPredicateMacro(PQLParser.BinaryPredicateMacroContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#binaryPredicateMacroTaskSet}.
-	 * @param ctx the parse tree
-	 */
-	void enterBinaryPredicateMacroTaskSet(PQLParser.BinaryPredicateMacroTaskSetContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#binaryPredicateMacroTaskSet}.
-	 * @param ctx the parse tree
-	 */
-	void exitBinaryPredicateMacroTaskSet(PQLParser.BinaryPredicateMacroTaskSetContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#binaryPredicateMacroSetSet}.
-	 * @param ctx the parse tree
-	 */
-	void enterBinaryPredicateMacroSetSet(PQLParser.BinaryPredicateMacroSetSetContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#binaryPredicateMacroSetSet}.
-	 * @param ctx the parse tree
-	 */
-	void exitBinaryPredicateMacroSetSet(PQLParser.BinaryPredicateMacroSetSetContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#anyEachAll}.
-	 * @param ctx the parse tree
-	 */
-	void enterAnyEachAll(PQLParser.AnyEachAllContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#anyEachAll}.
-	 * @param ctx the parse tree
-	 */
-	void exitAnyEachAll(PQLParser.AnyEachAllContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#setPredicate}.
-	 * @param ctx the parse tree
-	 */
-	void enterSetPredicate(PQLParser.SetPredicateContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#setPredicate}.
-	 * @param ctx the parse tree
-	 */
-	void exitSetPredicate(PQLParser.SetPredicateContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#taskInSetOfTasks}.
-	 * @param ctx the parse tree
-	 */
-	void enterTaskInSetOfTasks(PQLParser.TaskInSetOfTasksContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#taskInSetOfTasks}.
-	 * @param ctx the parse tree
-	 */
-	void exitTaskInSetOfTasks(PQLParser.TaskInSetOfTasksContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#setComparison}.
-	 * @param ctx the parse tree
-	 */
-	void enterSetComparison(PQLParser.SetComparisonContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#setComparison}.
-	 * @param ctx the parse tree
-	 */
-	void exitSetComparison(PQLParser.SetComparisonContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#setComparisonOperator}.
-	 * @param ctx the parse tree
-	 */
-	void enterSetComparisonOperator(PQLParser.SetComparisonOperatorContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#setComparisonOperator}.
-	 * @param ctx the parse tree
-	 */
-	void exitSetComparisonOperator(PQLParser.SetComparisonOperatorContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#truthValue}.
-	 * @param ctx the parse tree
-	 */
-	void enterTruthValue(PQLParser.TruthValueContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#truthValue}.
-	 * @param ctx the parse tree
-	 */
-	void exitTruthValue(PQLParser.TruthValueContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#logicalTest}.
-	 * @param ctx the parse tree
-	 */
-	void enterLogicalTest(PQLParser.LogicalTestContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#logicalTest}.
-	 * @param ctx the parse tree
-	 */
-	void exitLogicalTest(PQLParser.LogicalTestContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#union}.
-	 * @param ctx the parse tree
-	 */
-	void enterUnion(PQLParser.UnionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#union}.
-	 * @param ctx the parse tree
-	 */
-	void exitUnion(PQLParser.UnionContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#intersection}.
-	 * @param ctx the parse tree
-	 */
-	void enterIntersection(PQLParser.IntersectionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#intersection}.
-	 * @param ctx the parse tree
-	 */
-	void exitIntersection(PQLParser.IntersectionContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#difference}.
-	 * @param ctx the parse tree
-	 */
-	void enterDifference(PQLParser.DifferenceContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#difference}.
-	 * @param ctx the parse tree
-	 */
-	void exitDifference(PQLParser.DifferenceContext ctx);
+	void exitSetOfAllTasks(@NotNull PQLParser.SetOfAllTasksContext ctx);
+
 	/**
 	 * Enter a parse tree produced by {@link PQLParser#negation}.
 	 * @param ctx the parse tree
 	 */
-	void enterNegation(PQLParser.NegationContext ctx);
+	void enterNegation(@NotNull PQLParser.NegationContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link PQLParser#negation}.
 	 * @param ctx the parse tree
 	 */
-	void exitNegation(PQLParser.NegationContext ctx);
+	void exitNegation(@NotNull PQLParser.NegationContext ctx);
+
 	/**
-	 * Enter a parse tree produced by {@link PQLParser#isTrue}.
+	 * Enter a parse tree produced by {@link PQLParser#setComparison}.
 	 * @param ctx the parse tree
 	 */
-	void enterIsTrue(PQLParser.IsTrueContext ctx);
+	void enterSetComparison(@NotNull PQLParser.SetComparisonContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link PQLParser#isTrue}.
+	 * Exit a parse tree produced by {@link PQLParser#setComparison}.
 	 * @param ctx the parse tree
 	 */
-	void exitIsTrue(PQLParser.IsTrueContext ctx);
+	void exitSetComparison(@NotNull PQLParser.SetComparisonContext ctx);
+
 	/**
-	 * Enter a parse tree produced by {@link PQLParser#isNotTrue}.
+	 * Enter a parse tree produced by {@link PQLParser#unaryTracePredicate}.
 	 * @param ctx the parse tree
 	 */
-	void enterIsNotTrue(PQLParser.IsNotTrueContext ctx);
+	void enterUnaryTracePredicate(@NotNull PQLParser.UnaryTracePredicateContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link PQLParser#isNotTrue}.
+	 * Exit a parse tree produced by {@link PQLParser#unaryTracePredicate}.
 	 * @param ctx the parse tree
 	 */
-	void exitIsNotTrue(PQLParser.IsNotTrueContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#isFalse}.
-	 * @param ctx the parse tree
-	 */
-	void enterIsFalse(PQLParser.IsFalseContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#isFalse}.
-	 * @param ctx the parse tree
-	 */
-	void exitIsFalse(PQLParser.IsFalseContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#isNotFalse}.
-	 * @param ctx the parse tree
-	 */
-	void enterIsNotFalse(PQLParser.IsNotFalseContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#isNotFalse}.
-	 * @param ctx the parse tree
-	 */
-	void exitIsNotFalse(PQLParser.IsNotFalseContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#disjunction}.
-	 * @param ctx the parse tree
-	 */
-	void enterDisjunction(PQLParser.DisjunctionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#disjunction}.
-	 * @param ctx the parse tree
-	 */
-	void exitDisjunction(PQLParser.DisjunctionContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#conjunction}.
-	 * @param ctx the parse tree
-	 */
-	void enterConjunction(PQLParser.ConjunctionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#conjunction}.
-	 * @param ctx the parse tree
-	 */
-	void exitConjunction(PQLParser.ConjunctionContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#parentheses}.
-	 * @param ctx the parse tree
-	 */
-	void enterParentheses(PQLParser.ParenthesesContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#parentheses}.
-	 * @param ctx the parse tree
-	 */
-	void exitParentheses(PQLParser.ParenthesesContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#setOfTasksParentheses}.
-	 * @param ctx the parse tree
-	 */
-	void enterSetOfTasksParentheses(PQLParser.SetOfTasksParenthesesContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#setOfTasksParentheses}.
-	 * @param ctx the parse tree
-	 */
-	void exitSetOfTasksParentheses(PQLParser.SetOfTasksParenthesesContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#identical}.
-	 * @param ctx the parse tree
-	 */
-	void enterIdentical(PQLParser.IdenticalContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#identical}.
-	 * @param ctx the parse tree
-	 */
-	void exitIdentical(PQLParser.IdenticalContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#different}.
-	 * @param ctx the parse tree
-	 */
-	void enterDifferent(PQLParser.DifferentContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#different}.
-	 * @param ctx the parse tree
-	 */
-	void exitDifferent(PQLParser.DifferentContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link PQLParser#overlapsWith}.
-	 * @param ctx the parse tree
-	 */
-	void enterOverlapsWith(PQLParser.OverlapsWithContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link PQLParser#overlapsWith}.
-	 * @param ctx the parse tree
-	 */
-	void exitOverlapsWith(PQLParser.OverlapsWithContext ctx);
+	void exitUnaryTracePredicate(@NotNull PQLParser.UnaryTracePredicateContext ctx);
+
 	/**
 	 * Enter a parse tree produced by {@link PQLParser#subsetOf}.
 	 * @param ctx the parse tree
 	 */
-	void enterSubsetOf(PQLParser.SubsetOfContext ctx);
+	void enterSubsetOf(@NotNull PQLParser.SubsetOfContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link PQLParser#subsetOf}.
 	 * @param ctx the parse tree
 	 */
-	void exitSubsetOf(PQLParser.SubsetOfContext ctx);
+	void exitSubsetOf(@NotNull PQLParser.SubsetOfContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#approximate}.
+	 * @param ctx the parse tree
+	 */
+	void enterApproximate(@NotNull PQLParser.ApproximateContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#approximate}.
+	 * @param ctx the parse tree
+	 */
+	void exitApproximate(@NotNull PQLParser.ApproximateContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#unaryPredicateName}.
+	 * @param ctx the parse tree
+	 */
+	void enterUnaryPredicateName(@NotNull PQLParser.UnaryPredicateNameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#unaryPredicateName}.
+	 * @param ctx the parse tree
+	 */
+	void exitUnaryPredicateName(@NotNull PQLParser.UnaryPredicateNameContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#setOfTasksLiteral}.
+	 * @param ctx the parse tree
+	 */
+	void enterSetOfTasksLiteral(@NotNull PQLParser.SetOfTasksLiteralContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#setOfTasksLiteral}.
+	 * @param ctx the parse tree
+	 */
+	void exitSetOfTasksLiteral(@NotNull PQLParser.SetOfTasksLiteralContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#binaryPredicate}.
+	 * @param ctx the parse tree
+	 */
+	void enterBinaryPredicate(@NotNull PQLParser.BinaryPredicateContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#binaryPredicate}.
+	 * @param ctx the parse tree
+	 */
+	void exitBinaryPredicate(@NotNull PQLParser.BinaryPredicateContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#identical}.
+	 * @param ctx the parse tree
+	 */
+	void enterIdentical(@NotNull PQLParser.IdenticalContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#identical}.
+	 * @param ctx the parse tree
+	 */
+	void exitIdentical(@NotNull PQLParser.IdenticalContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#predicate}.
+	 * @param ctx the parse tree
+	 */
+	void enterPredicate(@NotNull PQLParser.PredicateContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#predicate}.
+	 * @param ctx the parse tree
+	 */
+	void exitPredicate(@NotNull PQLParser.PredicateContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#setPredicate}.
+	 * @param ctx the parse tree
+	 */
+	void enterSetPredicate(@NotNull PQLParser.SetPredicateContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#setPredicate}.
+	 * @param ctx the parse tree
+	 */
+	void exitSetPredicate(@NotNull PQLParser.SetPredicateContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#taskInSetOfTasks}.
+	 * @param ctx the parse tree
+	 */
+	void enterTaskInSetOfTasks(@NotNull PQLParser.TaskInSetOfTasksContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#taskInSetOfTasks}.
+	 * @param ctx the parse tree
+	 */
+	void exitTaskInSetOfTasks(@NotNull PQLParser.TaskInSetOfTasksContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#intersection}.
+	 * @param ctx the parse tree
+	 */
+	void enterIntersection(@NotNull PQLParser.IntersectionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#intersection}.
+	 * @param ctx the parse tree
+	 */
+	void exitIntersection(@NotNull PQLParser.IntersectionContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#binaryPredicateMacroSetSet}.
+	 * @param ctx the parse tree
+	 */
+	void enterBinaryPredicateMacroSetSet(@NotNull PQLParser.BinaryPredicateMacroSetSetContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#binaryPredicateMacroSetSet}.
+	 * @param ctx the parse tree
+	 */
+	void exitBinaryPredicateMacroSetSet(@NotNull PQLParser.BinaryPredicateMacroSetSetContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#truthValue}.
+	 * @param ctx the parse tree
+	 */
+	void enterTruthValue(@NotNull PQLParser.TruthValueContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#truthValue}.
+	 * @param ctx the parse tree
+	 */
+	void exitTruthValue(@NotNull PQLParser.TruthValueContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#insertQuery}.
+	 * @param ctx the parse tree
+	 */
+	void enterInsertQuery(@NotNull PQLParser.InsertQueryContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#insertQuery}.
+	 * @param ctx the parse tree
+	 */
+	void exitInsertQuery(@NotNull PQLParser.InsertQueryContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#isNotFalse}.
+	 * @param ctx the parse tree
+	 */
+	void enterIsNotFalse(@NotNull PQLParser.IsNotFalseContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#isNotFalse}.
+	 * @param ctx the parse tree
+	 */
+	void exitIsNotFalse(@NotNull PQLParser.IsNotFalseContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#different}.
+	 * @param ctx the parse tree
+	 */
+	void enterDifferent(@NotNull PQLParser.DifferentContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#different}.
+	 * @param ctx the parse tree
+	 */
+	void exitDifferent(@NotNull PQLParser.DifferentContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#tasks}.
+	 * @param ctx the parse tree
+	 */
+	void enterTasks(@NotNull PQLParser.TasksContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#tasks}.
+	 * @param ctx the parse tree
+	 */
+	void exitTasks(@NotNull PQLParser.TasksContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#parentheses}.
+	 * @param ctx the parse tree
+	 */
+	void enterParentheses(@NotNull PQLParser.ParenthesesContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#parentheses}.
+	 * @param ctx the parse tree
+	 */
+	void exitParentheses(@NotNull PQLParser.ParenthesesContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#isNotTrue}.
+	 * @param ctx the parse tree
+	 */
+	void enterIsNotTrue(@NotNull PQLParser.IsNotTrueContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#isNotTrue}.
+	 * @param ctx the parse tree
+	 */
+	void exitIsNotTrue(@NotNull PQLParser.IsNotTrueContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#query}.
+	 * @param ctx the parse tree
+	 */
+	void enterQuery(@NotNull PQLParser.QueryContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#query}.
+	 * @param ctx the parse tree
+	 */
+	void exitQuery(@NotNull PQLParser.QueryContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#binaryPredicateMacro}.
+	 * @param ctx the parse tree
+	 */
+	void enterBinaryPredicateMacro(@NotNull PQLParser.BinaryPredicateMacroContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#binaryPredicateMacro}.
+	 * @param ctx the parse tree
+	 */
+	void exitBinaryPredicateMacro(@NotNull PQLParser.BinaryPredicateMacroContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#isFalse}.
+	 * @param ctx the parse tree
+	 */
+	void enterIsFalse(@NotNull PQLParser.IsFalseContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#isFalse}.
+	 * @param ctx the parse tree
+	 */
+	void exitIsFalse(@NotNull PQLParser.IsFalseContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#task}.
+	 * @param ctx the parse tree
+	 */
+	void enterTask(@NotNull PQLParser.TaskContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#task}.
+	 * @param ctx the parse tree
+	 */
+	void exitTask(@NotNull PQLParser.TaskContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#binaryPredicateConstruction}.
+	 * @param ctx the parse tree
+	 */
+	void enterBinaryPredicateConstruction(@NotNull PQLParser.BinaryPredicateConstructionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#binaryPredicateConstruction}.
+	 * @param ctx the parse tree
+	 */
+	void exitBinaryPredicateConstruction(@NotNull PQLParser.BinaryPredicateConstructionContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#difference}.
+	 * @param ctx the parse tree
+	 */
+	void enterDifference(@NotNull PQLParser.DifferenceContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#difference}.
+	 * @param ctx the parse tree
+	 */
+	void exitDifference(@NotNull PQLParser.DifferenceContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#nestedQuery}.
+	 * @param ctx the parse tree
+	 */
+	void enterNestedQuery(@NotNull PQLParser.NestedQueryContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#nestedQuery}.
+	 * @param ctx the parse tree
+	 */
+	void exitNestedQuery(@NotNull PQLParser.NestedQueryContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#anySomeEachAll}.
+	 * @param ctx the parse tree
+	 */
+	void enterAnySomeEachAll(@NotNull PQLParser.AnySomeEachAllContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#anySomeEachAll}.
+	 * @param ctx the parse tree
+	 */
+	void exitAnySomeEachAll(@NotNull PQLParser.AnySomeEachAllContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#setComparisonOperator}.
+	 * @param ctx the parse tree
+	 */
+	void enterSetComparisonOperator(@NotNull PQLParser.SetComparisonOperatorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#setComparisonOperator}.
+	 * @param ctx the parse tree
+	 */
+	void exitSetComparisonOperator(@NotNull PQLParser.SetComparisonOperatorContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#binaryPredicateName}.
+	 * @param ctx the parse tree
+	 */
+	void enterBinaryPredicateName(@NotNull PQLParser.BinaryPredicateNameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#binaryPredicateName}.
+	 * @param ctx the parse tree
+	 */
+	void exitBinaryPredicateName(@NotNull PQLParser.BinaryPredicateNameContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#selectQuery}.
+	 * @param ctx the parse tree
+	 */
+	void enterSelectQuery(@NotNull PQLParser.SelectQueryContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#selectQuery}.
+	 * @param ctx the parse tree
+	 */
+	void exitSelectQuery(@NotNull PQLParser.SelectQueryContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#varName}.
+	 * @param ctx the parse tree
+	 */
+	void enterVarName(@NotNull PQLParser.VarNameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#varName}.
+	 * @param ctx the parse tree
+	 */
+	void exitVarName(@NotNull PQLParser.VarNameContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#setOfTasksConstruction}.
+	 * @param ctx the parse tree
+	 */
+	void enterSetOfTasksConstruction(@NotNull PQLParser.SetOfTasksConstructionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#setOfTasksConstruction}.
+	 * @param ctx the parse tree
+	 */
+	void exitSetOfTasksConstruction(@NotNull PQLParser.SetOfTasksConstructionContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#unaryPredicateMacro}.
+	 * @param ctx the parse tree
+	 */
+	void enterUnaryPredicateMacro(@NotNull PQLParser.UnaryPredicateMacroContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#unaryPredicateMacro}.
+	 * @param ctx the parse tree
+	 */
+	void exitUnaryPredicateMacro(@NotNull PQLParser.UnaryPredicateMacroContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#overlapsWith}.
+	 * @param ctx the parse tree
+	 */
+	void enterOverlapsWith(@NotNull PQLParser.OverlapsWithContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#overlapsWith}.
+	 * @param ctx the parse tree
+	 */
+	void exitOverlapsWith(@NotNull PQLParser.OverlapsWithContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#trace}.
+	 * @param ctx the parse tree
+	 */
+	void enterTrace(@NotNull PQLParser.TraceContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#trace}.
+	 * @param ctx the parse tree
+	 */
+	void exitTrace(@NotNull PQLParser.TraceContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#conjunction}.
+	 * @param ctx the parse tree
+	 */
+	void enterConjunction(@NotNull PQLParser.ConjunctionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#conjunction}.
+	 * @param ctx the parse tree
+	 */
+	void exitConjunction(@NotNull PQLParser.ConjunctionContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#similarity}.
+	 * @param ctx the parse tree
+	 */
+	void enterSimilarity(@NotNull PQLParser.SimilarityContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#similarity}.
+	 * @param ctx the parse tree
+	 */
+	void exitSimilarity(@NotNull PQLParser.SimilarityContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#proposition}.
+	 * @param ctx the parse tree
+	 */
+	void enterProposition(@NotNull PQLParser.PropositionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#proposition}.
+	 * @param ctx the parse tree
+	 */
+	void exitProposition(@NotNull PQLParser.PropositionContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#anyAll}.
+	 * @param ctx the parse tree
+	 */
+	void enterAnyAll(@NotNull PQLParser.AnyAllContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#anyAll}.
+	 * @param ctx the parse tree
+	 */
+	void exitAnyAll(@NotNull PQLParser.AnyAllContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#attributeName}.
+	 * @param ctx the parse tree
+	 */
+	void enterAttributeName(@NotNull PQLParser.AttributeNameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#attributeName}.
+	 * @param ctx the parse tree
+	 */
+	void exitAttributeName(@NotNull PQLParser.AttributeNameContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#attribute}.
+	 * @param ctx the parse tree
+	 */
+	void enterAttribute(@NotNull PQLParser.AttributeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#attribute}.
+	 * @param ctx the parse tree
+	 */
+	void exitAttribute(@NotNull PQLParser.AttributeContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#setOfTasks}.
+	 * @param ctx the parse tree
+	 */
+	void enterSetOfTasks(@NotNull PQLParser.SetOfTasksContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#setOfTasks}.
+	 * @param ctx the parse tree
+	 */
+	void exitSetOfTasks(@NotNull PQLParser.SetOfTasksContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#logicalTest}.
+	 * @param ctx the parse tree
+	 */
+	void enterLogicalTest(@NotNull PQLParser.LogicalTestContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#logicalTest}.
+	 * @param ctx the parse tree
+	 */
+	void exitLogicalTest(@NotNull PQLParser.LogicalTestContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#event}.
+	 * @param ctx the parse tree
+	 */
+	void enterEvent(@NotNull PQLParser.EventContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#event}.
+	 * @param ctx the parse tree
+	 */
+	void exitEvent(@NotNull PQLParser.EventContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#variables}.
+	 * @param ctx the parse tree
+	 */
+	void enterVariables(@NotNull PQLParser.VariablesContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#variables}.
+	 * @param ctx the parse tree
+	 */
+	void exitVariables(@NotNull PQLParser.VariablesContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#disjunction}.
+	 * @param ctx the parse tree
+	 */
+	void enterDisjunction(@NotNull PQLParser.DisjunctionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#disjunction}.
+	 * @param ctx the parse tree
+	 */
+	void exitDisjunction(@NotNull PQLParser.DisjunctionContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#unaryPredicate}.
+	 * @param ctx the parse tree
+	 */
+	void enterUnaryPredicate(@NotNull PQLParser.UnaryPredicateContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#unaryPredicate}.
+	 * @param ctx the parse tree
+	 */
+	void exitUnaryPredicate(@NotNull PQLParser.UnaryPredicateContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#label}.
+	 * @param ctx the parse tree
+	 */
+	void enterLabel(@NotNull PQLParser.LabelContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#label}.
+	 * @param ctx the parse tree
+	 */
+	void exitLabel(@NotNull PQLParser.LabelContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#union}.
+	 * @param ctx the parse tree
+	 */
+	void enterUnion(@NotNull PQLParser.UnionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#union}.
+	 * @param ctx the parse tree
+	 */
+	void exitUnion(@NotNull PQLParser.UnionContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#setOfTasksParentheses}.
+	 * @param ctx the parse tree
+	 */
+	void enterSetOfTasksParentheses(@NotNull PQLParser.SetOfTasksParenthesesContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#setOfTasksParentheses}.
+	 * @param ctx the parse tree
+	 */
+	void exitSetOfTasksParentheses(@NotNull PQLParser.SetOfTasksParenthesesContext ctx);
+
 	/**
 	 * Enter a parse tree produced by {@link PQLParser#properSubsetOf}.
 	 * @param ctx the parse tree
 	 */
-	void enterProperSubsetOf(PQLParser.ProperSubsetOfContext ctx);
+	void enterProperSubsetOf(@NotNull PQLParser.ProperSubsetOfContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link PQLParser#properSubsetOf}.
 	 * @param ctx the parse tree
 	 */
-	void exitProperSubsetOf(PQLParser.ProperSubsetOfContext ctx);
+	void exitProperSubsetOf(@NotNull PQLParser.ProperSubsetOfContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#isTrue}.
+	 * @param ctx the parse tree
+	 */
+	void enterIsTrue(@NotNull PQLParser.IsTrueContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#isTrue}.
+	 * @param ctx the parse tree
+	 */
+	void exitIsTrue(@NotNull PQLParser.IsTrueContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#universe}.
+	 * @param ctx the parse tree
+	 */
+	void enterUniverse(@NotNull PQLParser.UniverseContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#universe}.
+	 * @param ctx the parse tree
+	 */
+	void exitUniverse(@NotNull PQLParser.UniverseContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#variable}.
+	 * @param ctx the parse tree
+	 */
+	void enterVariable(@NotNull PQLParser.VariableContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#variable}.
+	 * @param ctx the parse tree
+	 */
+	void exitVariable(@NotNull PQLParser.VariableContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#attributes}.
+	 * @param ctx the parse tree
+	 */
+	void enterAttributes(@NotNull PQLParser.AttributesContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#attributes}.
+	 * @param ctx the parse tree
+	 */
+	void exitAttributes(@NotNull PQLParser.AttributesContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#locations}.
+	 * @param ctx the parse tree
+	 */
+	void enterLocations(@NotNull PQLParser.LocationsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#locations}.
+	 * @param ctx the parse tree
+	 */
+	void exitLocations(@NotNull PQLParser.LocationsContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#location}.
+	 * @param ctx the parse tree
+	 */
+	void enterLocation(@NotNull PQLParser.LocationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#location}.
+	 * @param ctx the parse tree
+	 */
+	void exitLocation(@NotNull PQLParser.LocationContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#binaryPredicateMacroTaskSet}.
+	 * @param ctx the parse tree
+	 */
+	void enterBinaryPredicateMacroTaskSet(@NotNull PQLParser.BinaryPredicateMacroTaskSetContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#binaryPredicateMacroTaskSet}.
+	 * @param ctx the parse tree
+	 */
+	void exitBinaryPredicateMacroTaskSet(@NotNull PQLParser.BinaryPredicateMacroTaskSetContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#locationPath}.
+	 * @param ctx the parse tree
+	 */
+	void enterLocationPath(@NotNull PQLParser.LocationPathContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#locationPath}.
+	 * @param ctx the parse tree
+	 */
+	void exitLocationPath(@NotNull PQLParser.LocationPathContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#unaryPredicateConstruction}.
+	 * @param ctx the parse tree
+	 */
+	void enterUnaryPredicateConstruction(@NotNull PQLParser.UnaryPredicateConstructionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#unaryPredicateConstruction}.
+	 * @param ctx the parse tree
+	 */
+	void exitUnaryPredicateConstruction(@NotNull PQLParser.UnaryPredicateConstructionContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link PQLParser#unaryTracePredicateName}.
+	 * @param ctx the parse tree
+	 */
+	void enterUnaryTracePredicateName(@NotNull PQLParser.UnaryTracePredicateNameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link PQLParser#unaryTracePredicateName}.
+	 * @param ctx the parse tree
+	 */
+	void exitUnaryTracePredicateName(@NotNull PQLParser.UnaryTracePredicateNameContext ctx);
 }

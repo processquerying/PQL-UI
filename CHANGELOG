@@ -1,0 +1,29 @@
+PQL ver 1.3
+====================
+1) Test code has been moved from src/ to /test so that Maven's "test" target works
+2) References to MySQL tables and function are no longer hardcoded to use a database named "pql"
+3) Configuring a MySQL JDBC URL that includes a query part now works
+4) Extension to the PQL grammar for handling binary predicate macros (added keyword “SOME”)
+5) Binary predicate constructions are now interpreted correctly according to the dynamic semantics of PQL
+6) Updated the PQL tool and PQL bot CLI messages
+7) Folder heirarchy has been added to database ('pql_folder_id', 'pql_folder_name', 'pql_folder_struct')
+8) Added new command line functions: 'mkdir', 'rmdir', 'ls' and 'mv'
+9) Updated query, store, delete and reset functionality
+
+PQL ver 1.2
+====================
+1)  Optimized execution of unary predicate macros and binary predicate macro 'CanCooccur' (handling sets of tasks instead of each individual task)
+2)  Improved handling of indexing timeouts in PQL bots (improved termination of Java threads)
+3)  Minor fix in parsing of binary predicate macros 
+
+PQL ver 1.1.2
+====================
+1)  Changed PQL syntax from '*' to 'GetTasks()' to denote the set of all tasks of a model matched to the query
+
+PQL ver 1.1.1
+====================
+1)  Introduced support of two PQL query attributes: Universe ('*') and AttributeName (STRING)
+2)  Introduced support of two PQL query locations: Universe ('*') and LocationPath (STRING)
+3)  Introduced org.pql.test.core package with two JUnit tests that every next PQL commit must pass
+4)  Changed to ensure that for every PQL query, attributes and locations get interpreted only once
+
